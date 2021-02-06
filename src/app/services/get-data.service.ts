@@ -9,7 +9,7 @@ import  { Weather } from '../model/weather';
 })
 export class GetDataService {
   private appId = 'e47f39b2a7356377c12758ab1399b3a3';
-  private urlAPI = `http://api.openweathermap.org/data/2.5/weather`;
+  private urlAPI = `https://api.openweathermap.org/data/2.5/weather`;
 
   constructor(private http: HttpClient) { }
 
