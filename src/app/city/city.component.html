@@ -1,0 +1,17 @@
+<div class="card" *ngIf="value.name !== undefined">
+  <div class="card__city">{{value.name }}</div>
+  <div class="card__icon">
+    <span *ngIf="value.weather[0].icon">
+      <fa-icon [icon]="getIcon(value.weather[0].icon)"></fa-icon>
+    </span>
+    <span class="card__icon-temp">{{value.main.temp | round }} &#176;С</span>
+  </div>
+  <div>{{value.weather[0].description}}</div>
+  <div class="card__info">Ощущается  {{value.main.feels_like | round }} &#176;С</div>
+  <div class="card__info">Давление: {{value.main.pressure | pressure | round }} мм рт.ст</div>
+  <div class="card__info">Влажность: {{value.main.humidity}}%</div>
+  <div class="card__info">Ветер: {{value.wind.speed | round }} м/с, {{value.wind.deg | wind}}</div>
+<!--  <div>-->
+<!--    <img src="http://openweathermap.org/img/wn/{{value.weather[0].icon}}@2x.png" alt="">-->
+<!--  </div>-->
+</div>

@@ -1,0 +1,22 @@
+:host {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 75vh;
+  color: #486f9f;
+
+  .container {
+    align-self: center;
+
+    .container__child-first {
+      font-size: 24px;
+    }
+
+    .container__link a {
+      all: initial;
+      color: #acc5dc;
+      cursor: pointer;
+      font-size: 18px;
+    }
+  }
+}

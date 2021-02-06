@@ -1,0 +1,28 @@
+.card {
+  width: 20vw;
+  background-color: #eaedf4;
+  margin: 20px 0 0 0;
+  padding: 20px 20px 40px 20px;
+  color: #486f9f;
+
+  .card__city {
+    font-size: 26px;
+  }
+
+  .card__icon {
+    color: #acc5dc;
+    font-size: 36px;
+
+    .card__icon-temp {
+      font-size: 36px;
+      display: inline-block;
+      padding: 0 20px;
+      color: #486f9f;
+    }
+  }
+
+  .card__info {
+    color: #7395b6;
+    font-size: 14px;
+  }
+}

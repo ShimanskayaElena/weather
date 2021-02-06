@@ -1,0 +1,15 @@
+<div class="modal">
+  <div class="modal-body">
+    <h2>Выбор города</h2>
+    <div class="modal__ul">
+      <ul *ngFor="let city of cities" (click)="selectCity(city)">
+        <li>{{city.name}}</li>
+      </ul>
+    </div>
+    <div *ngIf="errorMessage">Этот город уже выбран!</div>
+    <div class="modal__button">
+      <button (click)="closeModal()">Закрыть</button>
+    </div>
+  </div>
+</div>
+<div class="modal-background"></div>

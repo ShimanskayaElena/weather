@@ -1,0 +1,39 @@
+.modal {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  .modal-body {
+    padding: 5vh 5vw;
+    margin: 10vh 10vw;
+    background-color: #fff;
+    width: 70vw;
+
+    .modal__ul {
+      height: 50vh;
+      overflow: auto;
+      cursor: pointer;
+    }
+
+    .modal__button {
+      margin-top: 30px;
+    }
+  }
+}
+
+.modal-background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.25;
+  z-index: 900;
+}
+
+li {
+  list-style-type: none;
+}
