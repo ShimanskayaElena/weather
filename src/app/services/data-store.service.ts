@@ -11,8 +11,7 @@ export class DataStoreService {
 
   cities: Array<City> = cities;
   showCities = new Map();
-  selectedCities: Array<{key: number; element: ComponentRef<CityComponent>}> = [];
-  private selectCity$ = new ReplaySubject<City>(1);
+  selectCity$ = new ReplaySubject<City>(1);
 
   constructor() { }
 
@@ -30,6 +29,5 @@ export class DataStoreService {
 
   setShowCities(id: number, elem: ComponentRef<CityComponent>): void {
     this.showCities.set(id, elem);
-    this.selectedCities.push({ key: id, element: elem});
   }
 }
